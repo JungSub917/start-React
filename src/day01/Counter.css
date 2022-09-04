@@ -1,0 +1,7 @@
+.counter-container{
+  width: 400px;
+  text-align: center;
+}
+.counter-container button{
+  padding: 0;
+}
