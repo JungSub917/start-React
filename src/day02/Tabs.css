@@ -1,0 +1,23 @@
+.tabs-container ul{
+  display: flex;
+}
+.tab-btns li{
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid black;
+  border-bottom: none;
+}
+.tab-btns li.active{
+  background-color: black;
+  color: #fff;
+}
+.tab-contents>div{
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  display: none;
+}
+.content.active{
+  display: block;
+}
