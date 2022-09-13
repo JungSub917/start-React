@@ -10,7 +10,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <div>
+    <div className='App'>
       <h1>Hello React App!</h1>
       <Tabs />
       <Accordion />

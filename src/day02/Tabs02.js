@@ -20,6 +20,9 @@ const Tabs = () => {
   // setTabToggle(3) : tabToggle = 3;
   // 1. 함수와 변수를 별도로 두어 제작하지 않아도 됨
   // 2. js로 제작 했을 때는 화면 갱신을 수동으로 갱신시켜야하는데 useState가 바뀌면 자동으로 화면 갱신이 이루어짐 : render
+  const eventHandle = (event) => {
+    event.preventDefault();
+  }
   return (
     <div className='tabs-container'>
       <ul className="tab-btns" 
@@ -30,6 +33,7 @@ const Tabs = () => {
         >
           <a href="#" 
              style={aLink}
+             onClick={eventHandle}
           >
             TabsBtn1
           </a>
@@ -39,6 +43,7 @@ const Tabs = () => {
         >
           <a href="#" 
              style={aLink}
+             onClick={eventHandle}
           >
             TabsBtn2
           </a>
@@ -48,6 +53,7 @@ const Tabs = () => {
         >
           <a href="#" 
              style={aLink}
+             onClick={eventHandle}
           >
             TabsBtn3
           </a>
